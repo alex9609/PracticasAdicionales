@@ -1,11 +1,12 @@
-package ar.com.entregas.semana15.carrousel;
+package co.com.entregas.semana15.carrousel;
 
 public class Carrousel {
-	
+
 	private Long id;
 	private String descripcion;
 	private String imagenpath;
 	private Long activo;
+
 	
 	public Carrousel(Long id, String descripcion, String imagenpath, Long activo) {
 		this.id = id;
@@ -48,11 +49,5 @@ public class Carrousel {
 	public void setActivo(Long activo) {
 		this.activo = activo;
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }

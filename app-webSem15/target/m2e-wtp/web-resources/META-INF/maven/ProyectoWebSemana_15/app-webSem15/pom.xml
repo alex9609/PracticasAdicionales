@@ -13,7 +13,11 @@
 
 	<!-- Dependencias de la app web -->
 	<dependencies>
-
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.23</version>
+		</dependency>
 		<!-- librerias -->
 		<!-- jsp/servlet -->
 		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
