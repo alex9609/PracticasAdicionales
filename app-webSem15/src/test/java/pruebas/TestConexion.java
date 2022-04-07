@@ -1,3 +1,4 @@
+package pruebas;
 import java.sql.SQLException;
 
 import co.com.entregas.semana15.jdbc.AdministradorConexiones;

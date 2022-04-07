@@ -50,4 +50,11 @@ public class Carrousel {
 		this.activo = activo;
 	}
 
+	@Override
+	public String toString() {
+		return "Carrousel [id=" + id + ", descripcion=" + descripcion + ", imagenpath=" + imagenpath + ", activo="
+				+ activo + "]";
+	}
+
+	
 }
