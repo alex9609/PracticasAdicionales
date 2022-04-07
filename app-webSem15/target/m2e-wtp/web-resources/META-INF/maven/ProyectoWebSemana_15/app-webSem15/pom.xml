@@ -45,7 +45,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>app-web</finalName>
+		<finalName>app-webSem15</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
