@@ -39,5 +39,23 @@ public class CarrouselDao {
 		return lista;
 
 	}
+	
+	public void updateImage(Long id,String image) throws Exception {
+
+		AdministradorConexiones con = new AdministradorConexiones();
+		try {
+			String sql = "UPDATE carrousel SET imagen = ? WHERE id = ? ";
+
+			PreparedStatement ps = con.obtenerConexion().prepareStatement(sql);
+			ps.setString(1, image);
+			ps.setLong(2, id);
+			ps.executeUpdate();
+
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		con.cerrarConexion();
+
+	}
 
 }

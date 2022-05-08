@@ -15,6 +15,9 @@ String msj = (String) request.getAttribute("error");
 	<main>
 		<h1 class="text-secondary text-center">Carrousel</h1>
 	<div class="container col-6">
+		<a class="btn btn-primary" href="<%=request.getContextPath()%>/ListadoImagenesServlet" role="button">Ver tabla con fotos</a>
+		<br>
+		<br>	
 		<%if(ls != null){%>
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			  <div class="carousel-inner">
@@ -44,10 +47,6 @@ String msj = (String) request.getAttribute("error");
 			  </button>
 		</div>
 		
-		<br>
-		<br>
-		
-		 	<a class="btn btn-primary" href="<%=request.getContextPath()%>/ListadoImagenesServlet" role="button">Guardar</a>	
 	</div>
 	<%}else{%>
 	<h2><%=msj%></h2>
